@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Questrial;
+  font-size: 1em;
+  width: 100%;
+}
+.li-black {
+  color: black;
+}
+.barra-navegacion {
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: -2px -2px 5px gray, 2px 2px 5px gray;
+}
+.ul-logo , .ul-menu {
+  list-style-type: none;
+}
+.ul-logo {
+  width: 300px;
+  float: left;
+  display: block;
+}
+.ul-menu {
+  padding-top: 10px;
+  float: right;
+  display: flex;
+}
+.li-menu {
+  margin-right: 30px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+.li-menu:hover {
+  border-bottom: #738b7d 2px solid;
+  border-width: medium;
+}
+.barra-navegacion a {
+  text-decoration: none;
+}
+.li-logo img {
+  margin-top: -20px;
+  margin-left: -50px;
+}
+
+section {
+  height: auto;
+}
+.subtitle {
+  padding: 10vh 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+footer {
+  height: 30vh;
+  background-color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.home {
+  z-index: 0;
+  background: #aed3bc;
+  height: 100vh;
+}
+.home img {
+  height: 50%;
+}
+.title {
+  font-size: 4em;
+}
+
+.pseudoselectores {
+  padding-bottom: 50px;
+  height: auto;
+  background: #738b7d;
+}
+.sillon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sillon-card {
+  margin-top: 20px;
+  opacity: 0;
+  width: 30%;
+}
+.sillon-card img {
+  display:block;
+  margin: auto;
+  width: 60%;
+}
+.sillon-card h3 {
+  font-size: 1.2em;
+  margin-top: 3vh;
+  text-align: center;
+  color: white;
+}
+
+.form {
+  background: #738b7d;
+  background-size: cover;
+  background-position: center;
+}
+.form, select {
+  height: auto;
+}
+
+.form-container, select {
+  width: 50%;
+  margin: auto;
+}
+.form input, select, button, textarea {
+  font-weight: bolder;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  background: rgb(209, 209, 209);
+  border: 2px solid rgba(56, 56, 56, 0.897);
+  border-radius: 5px;
+}
+textarea {
+  height: 80px;
+}
+button {
+  border: 2px solid rgba(56, 56, 56, 0.897);
+  background: #94b1a0;
+}
+label {
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+}
+
+.social-network {
+  background: #aed3bc;
+  height: 90vh;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.social-network div h5 {
+  display: inline-block;
+  margin: 30px;
+  font-size: 1.5em;
+}
+.social-network a {
+  text-decoration: none;
+  color: black;
+}
+.social-network a:hover {
+  font-size: 1.6em;
+  -webkit-transition: font-size 0.5s;
+}
+.facebook-icon {
+  width: 25px;
+}
+
+.flexbox1 {
+  background: white;
+  padding-bottom: 50px;
+}
+.mesasluz-card img {
+  display:block;
+  margin: auto;
+  width: 80%;
+}
+.mesasluz-card {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #738b7d;
+}
+
+.flexbox2 {
+  padding-bottom: 50px;
+  background: #aed3bc;
+}
+.puerta-card img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+/********************** INICIO ************************/
+
+/* INICIO 1) POSICIONAMIENTO */
+.home {
+  position: relative;
+}
+.title {
+  position: absolute;
+  top: 30%; /*180px*/
+  left: 20%; /*200px*/
+}
+.mesaysilla-home {
+  position: absolute;
+  top: 30%; /*170px*/
+  right: 10%; /*115px*/
+
+}
+.mueble-home {
+  position: absolute;
+  top: 50%; /*300px*/
+  left: 18%; /*190px*/
+}
+/* FIN 1) POSICIONAMIENTO */
+
+/* INICIO 2.1) PSEUDOSELECTORES */
+/* ESCRIBIR AQUI */ 
+section.pseudoselectores:hover div.sillon-card{
+  opacity: 1;
+  transition: 2s;
+}
+/* FIN 2.1) PSEUDOSELECTORES */
+
+/* INICIO 2.2) PSEUDOSELECTORES */
+/* ESCRIBIR AQUI */ 
+div.sillon-card:hover h3{
+  color: black;
+  transition: 1s;
+}
+/* FIN 2.2) PSEUDOSELECTOES */
+
+/* INICIO 3) FLEXBOX */
+.mesasluz-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.mesasluz-card {
+  width: 22%;
+}
+
+/* FIN 3) FLEXBOX */
+
+/* INICO 4) FLEXBOX */
+.puertas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* FIN 4) FLEXBOX */
+
+/* INICIO 7) ESTILO */
+footer {
+  background-image: url(../img/pattern.svg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* INICIO 7) FIN */
+
+/* NO TOCAR */
+@media (max-width: 850px) {
+    .ul-menu {
+        display: none;
+    }
+}
+
+
+/* MEDIA QUERY PARA TABLET (Ancho máximo 750px) */
+
+/* INICIO 8.1) MEDIA QUERIES TABLET */
+
+/* ESCRIBIR AQUI */ 
+@media (min-width: 451px) and (max-width: 750px) {
+
+/* FIN 8.1) MEDIA QUERIES TABLET */
+    .sillon-card {
+      width:45%;
+    }
+    .mesasluz-card {
+      width: 45%;
+    }
+    .mesaysilla-home {
+      display: none;
+    }
+    .home {
+      width: 100%;
+    }
+    .title {
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 2.5em;
+    }
+    .mueble-home {
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+}
+
+/* MEDIA QUERY PARA SMARTPHONE (Ancho máximo 450px) */
+/* INCIO 8.2) MEDIA QUERIES MOBILE */
+
+/* ESCRIBIR AQUI */ 
+@media (min-width: 0px) and (max-width: 450px){
+
+/* FIN 8.2) MEDIA QUERIES MOBILE */
+    .title {
+      font-size: 2em;
+    }
+    .sillon-card {
+      width:100%;
+    }
+    .mesasluz-card {
+      width: 100%;
+    }
+}

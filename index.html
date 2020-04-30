@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consignas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <!-- 6.1 SEMÁNTICA -->
+            <nav class="barra-navegacion"> <!-- ESTA ETIQUETA DEBE SER LA BARRA DE NAVEGACION -->
+                <ul class="ul-logo">
+                    <li class="li-logo"> <!-- ESTA ETIQUETA DEBE SER UN ELEMENTO DE LISTA -->
+                         <img src="img/dh.png" alt="Digital House logo">
+                    </li>  <!-- ESTA ETIQUETA DEBE SER UN ELEMENTO DE LISTA -->
+                </ul>
+                <ul class="ul-menu"> <!-- ESTA ETIQUETA DEBE SER UN CONTENEDOR DE LISTAS DESORDENADAS -->
+                    <li class="li-menu"><a class="li-black" href="#home">Punto 1</a></li>
+                    <li class="li-menu"><a class="li-black" href="#pseudoselectores">Punto 2</a></li>
+                    <li class="li-menu"><a class="li-black" href="#flex1">Punto 3</a></li>
+                    <li class="li-menu"><a class="li-black" href="#flex2">Punto 4</a></li>
+                    <li class="li-menu"><a class="li-black" href="#form">Punto 5</a></li>
+                    <li class="li-menu"><a class="li-black" href="#social">Punto 6</a></li>
+                    <li class="li-menu"><a class="li-black" href="#footer">Punto 7</a></li>
+                </ul> <!-- ESTA ETIQUETA DEBE SER UN CONTENEDOR DE LISTAS DESORDENADAS -->
+            </nav> <!-- ESTA ETIQUETA DEBE SER LA BARRA DE NAVEGACION -->
+        </header>
+    <section class="home" id="home">
+        <img src="img/mesaysillas.png" alt="" class="mesaysilla-home">
+        <img src="img/muebletv.png" alt="" class="mueble-home">
+        <h1 class="title">Digital Furniture</h1>
+    </section>
+    <section class="pseudoselectores" id="pseudoselectores">
+        <h2 class="subtitle">Sillones</h2>
+        <div class="sillon-container">
+            <div class="sillon-card">
+                <img src="img/pseudosillon1.png" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+            </div>
+            <div class="sillon-card">
+                <img src="img/pseudosillon2.png" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+            </div>
+            <div class="sillon-card">
+                <img src="img/pseudosillon3.png" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+            </div>
+        </div>
+    </section>
+    <section class="flexbox1" id="flex1">
+        <h2 class="subtitle">Mesas de luz</h2>
+        <div class="mesasluz-container">
+            <div class="mesasluz-card">
+                <img src="img/flexmesa1.png" alt="">
+            </div>
+            <div class="mesasluz-card">
+                <img src="img/flexmesa2.png" alt="">
+            </div>
+            <div class="mesasluz-card">
+                <img src="img/flexmesa3.png" alt="">
+            </div>
+            <div class="mesasluz-card">
+                <img src="img/flexmesa4.png" alt="">
+            </div>
+            <div class="mesasluz-card">
+                <img src="img/flexmesa4.png" alt="">
+            </div>
+            <div class="mesasluz-card">
+                <img src="img/flexmesa1.png" alt="">
+            </div>
+            <div class="mesasluz-card">
+                <img src="img/flexmesa2.png" alt="">
+            </div>
+            <div class="mesasluz-card">
+                <img src="img/flexmesa3.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="flexbox2" id="flex2">
+        <h2 class="subtitle">Puertas</h2>
+        <div class="puertas-container">
+            <div class="puerta-card">
+                <img src="img/puertasmargin1.png" alt="">
+            </div>
+            <div class="puerta-card">
+                <img src="img/puertasmargin2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="form" id="form">
+        <h2 class="subtitle">Sign in</h2>
+        <div class="form-container">
+            <form action="/" method="POST">
+                <input type="text" name="nombre" id="nombre" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Password">
+                <select name="pais" id="pais">
+                    <option disabled selected value>País de origen...</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+                <p>Deseas recibir información?</p>
+                <label for="si">SI</label>
+                <input type="radio" name="recibir-info" id="si">
+                <label for="no">NO</label>
+                <input type="radio" name="recibir-info" id="no">
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un comentario"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- 5) FORMULARIO -->
+
+        </div>
+    </section>
+    <section class="social-network" id="social">
+        <!-- INICIO 6.2) SEMÁNTICA -->
+        <h2 class="subtitle">Social networks</h2>
+        <div>
+            <h5>
+                <a href="https://www.facebook.com">Facebook</a>  <!-- INSERTAR ENLACE -->
+            </h5>
+            <img src="img/facebook.png" alt="" class="facebook-icon">
+        </div>
+        <div>
+            <h5>
+                <a href="https://instagram.com">Instagram</a>   <!-- INSERTAR ENLACE -->
+            </h5>
+            <img src="img/instagram.png" alt="" class="facebook-icon">
+        </div>
+        <!-- FIN 6.2) SEMÁNTICA -->
+    </section>
+
+    <div id="js-1" class="js">
+        <h2 class="h2-js" id="todasLasNotas"></h2>
+    </div>
+    <div id="js-2" class="js">
+        <h2 class="h2-js" id="usuario"></h2>
+    </div>
+
+    <a href="#">
+        <footer id="footer">
+        </footer>
+    </a>
+</body>
+</html>
+
+
+<script src="js/notocar.js"></script>
+
+
+
+
+
+
+<!-- 9) Linkear archivo Javascript llamado "script9.js"-->
+<script src="js/script9.js"></script>
+
+
+
+
+
+
+
+
+<script src="js/script10.js"></script>
